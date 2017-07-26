@@ -1,9 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupActivityRelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.melissa.booksdelivered.SignupActivity">
+    android:orientation="vertical"
+    android:background="@drawable/bookshelves">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Dialog_Box"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textStyle="bold|italic"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/newName_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Dialog_Box"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textStyle="bold|italic"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <EditText
+            android:id="@+id/newphoneNumber_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Dialog_Box"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="numberSigned" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Password" />
+        <EditText
+            android:id="@+id/newpassword_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Dialog_Box"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Confirm Password" />
+        <EditText
+            android:id="@+id/confirmed_newpassword_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Dialog_Box"
+            android:textAlignment="center"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/register_button_signupPage"
+            style="@style/Login_Button"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"/>
+
+        <TextView
+            android:id="@+id/oldAccountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            tools:textStyle="italic" />
+    </LinearLayout>
+
+</RelativeLayout>
+

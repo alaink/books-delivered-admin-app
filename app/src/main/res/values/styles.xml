@@ -1,25 +1,29 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#00838F</item>
+        <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/cardview_light_background</item>
     </style>
 
-    <style name= "Dialog_Box">
+    <style name="Dialog_Box">
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/dialog_box</item>
-        <item name="android:layout_margin">10dp </item>
+        <item name="android:layout_margin">10dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:ems">10</item>
     </style>
-    <style name= "Login_Button">
+
+    <style name="Login_Button">
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/login_button</item>
-        <item name="android:layout_margin">10dp </item>
+        <item name="android:layout_margin">10dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:ems">10</item>
@@ -30,5 +34,29 @@
         <item name="android:textColorPrimary">@color/colorAccent</item>
         <item name="android:background">@color/colorPrimaryDark</item>
     </style>
+
+    <style name="Checkout_Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/checkout_button</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="Checkin_Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/checkin_button</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
